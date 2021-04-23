@@ -126,6 +126,10 @@ In terms of security, because the respect of private life is the heart of our bu
 
 Last point, as we will develop internationally and, in the short term, in France, we will need to check our RGPD conformity. We have already started to work on this point, but we will need to improve it in the near future, taking into account each country's specificities.
 
+Accessibility
+-----------
+
+Our web app is responsive, meaning that it offers a good user experience on modern mobile screens, tablets and computer screens.
 
 How to build
 -----------
@@ -136,4 +140,4 @@ Web requirements (running serveur, domain name, SSL certificate…)
 Http server, Mysql & PHP.
 A running mail instance.
 
-As a web application, it's pretty quick to deploy : configuring the database with all the tables, putting the code on the serveur and then changing the php settings files (includes/connexion.php & includes/mail_account.php).
+As a web application, it's pretty quick to deploy : configuring the database with all the tables, putting the code on the server and then changing the php settings files (includes/connexion.php & includes/mail_account.php).
