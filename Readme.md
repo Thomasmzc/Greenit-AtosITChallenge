@@ -33,7 +33,7 @@ Given the limited time, we choose all the simplest and fastest elements to imple
 
 So for now, greenit is organized in a classical 3 part architecture as shown in the sketch below :
 
-!(url_de_l'image "Our 3-parts architecture")
+![Our 3-parts architecture](./Technical_documentation/assets/img/generalArchitecture.png)
 
 **Cloud solution**
 
@@ -54,7 +54,7 @@ In the technical documentation folder, you can find our functional modules in de
 
 To deal with our data, we are using Phpmyadmin, to manage a MySQL database. You can see the tables and their links (using unique auto-incremented ID) on the graph below: 
 
-!(./Technical documentation/assets/img/generalArchitecture.png, "Our database tables")
+!(, "Our database tables")
 
 OVH automatically manages regular backups.
 
