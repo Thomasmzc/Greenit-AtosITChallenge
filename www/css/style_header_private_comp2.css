@@ -1,0 +1,269 @@
+@font-face {
+  font-family: basier;
+  src: url(../assets/fonts/basiercircle-regular.otf);
+}
+@font-face {
+  font-family: basier-bold;
+  src: url(../assets/fonts/BasierCircle-Bold.ttf);
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style-type: none;
+}
+
+/** COLORS **/
+/* 
+Green : #00B34B; 
+Hard Grey: #1E1F1A ;
+*/
+body{
+	min-height: 100vh;
+	overflow: hidden;
+	font-family: basier;
+	background-color: #F4F4F4;
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	height: 6rem;
+	padding: 0.5rem 1rem;
+	z-index: 2;
+	background: transparent;
+}
+.teamcontainer{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: relative;
+	padding: 0.5rem 0.1rem;
+	background-color: #FFFFFF;
+	border-radius: 8px;
+	min-width: 15rem;
+	max-width: 20rem;
+	max-height: 5rem;
+	cursor: pointer;
+	margin-top: 1rem;
+}
+.teamcontainer img{
+	display: block;
+	position: relative;
+	width: 3.3rem;
+	height: 2.5rem;
+	border-radius: 8px; 
+	margin-left: 0.5rem;
+}
+.bigname-header{
+	font-family: helvetica;
+	font-size: 1.1rem;
+	font-weight: 700;
+}
+.littlename-header{
+	font-family: helvetica;
+	font-size: 0.9rem;
+	font-weight: 300;
+	color: #7B7B7B;
+	margin-top: 0.3rem;
+}
+.page-title{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding-top: 1rem;
+	text-align: right;
+}
+.page-title h1{
+	font-size: 3rem;
+}
+section{
+	display: flex;
+}
+nav{
+	display: block;
+	position: relative;
+	width: 15rem;
+	height: calc(100vh - 6rem);
+}
+nav ul{
+	display: block;
+	position: relative;
+	padding-left: 1rem;
+	margin-top: 2rem;
+}
+nav ul li{
+	display: block;
+	position: relative;
+	padding: 1rem 0.5rem;
+	border-radius: 8px;
+	color: #7B7B7B;
+	margin-top: 1rem;
+	cursor: pointer;
+}
+.navhome:hover{
+	background-color: #000000;
+}
+.navevent:hover{
+	background-color: #00B34B;
+}
+.navcomp:hover{
+	background-color: #027DFC;
+}
+.navparameters:hover{
+	background-color: #7B7B7B;
+}
+.navdash:hover{
+	background-color: #69AFEA;
+}
+nav ul li:hover a{
+	color: #FFFFFF;
+}
+nav ul li a{
+	display: flex;
+	text-decoration: none;
+	color: #7B7B7B;
+	font-family: helvetica;
+}
+nav ul li a img{
+	display: block;
+	position: relative;
+	height: 16px;
+	align-self: center;
+}
+nav ul li a p{
+	display: block;
+	position: relative;
+	margin-left: 0.6rem;
+	font-size: 15px;
+	font-weight: 600;
+}
+.logo{
+	display: block;
+	position: relative;
+	height: 30px;
+	margin: auto;
+}
+.burger{
+	display: none;
+}
+.burger div:not(.line2){
+	display: block;
+	position: relative;
+	width: 30px;
+	height: 4px;
+	background-color: #000000;
+	margin: 6px;
+	border-radius: 2px;
+	z-index: 50;
+	transition: all 0.3s ease;
+}
+.line2{
+	display: block;
+	position: relative;
+	width: 25px;
+	height: 4px;
+	border-radius: 2px;
+	background-color: #000000;
+	margin: 6px;
+	z-index: 50;
+	transition: all 0.3s ease;
+}
+.nav-links{
+	display: block;
+	position: absolute;
+	right: -5rem;
+	padding: 2rem 3rem;
+	top: 0;
+	background-color: #000000;
+	width: 20%;
+	height: 100vh;
+	z-index: 49;
+	transform: translateX(100%);
+	transition: all 0.5s ease-in;
+}
+.nav-link{
+	display: flex;
+	position: relative;
+	align-items: center;
+	margin-left: 7rem;
+	height: 8vh;
+}
+.nav-links li{
+	opacity: 0;
+}
+.nav-link a{
+	font-family: basier;
+	text-decoration: none;
+	color: #000000;
+	font-size: 1.2rem;
+}
+.nav-active{
+	transform: translateX(0%);
+}
+@keyframes navLinkFade{
+	from{
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+.toggle .line1{
+	transform: rotate(-45deg) translate(-6px,7.5px);
+}
+.toggle .line2{
+	opacity: 0;
+}
+.toggle .line3{
+	transform: rotate(45deg) translate(-6px,-7.5px);
+}
+@media screen and (max-width: 1000px){
+	body{
+		display: block;
+		position: relative;
+		width: 100vw;
+		overflow: auto;
+		overflow-x: hidden;
+	}
+	#bloc_page{
+		overflow: hidden;
+	}
+	nav{
+		display: none;
+	}
+	.teamcontainer{
+		display: none;
+	}
+	.burger{
+		display: block;
+	}
+	.nav-links{
+		display: block;
+		position: absolute;
+		right: 0rem;
+		padding: 5rem 3rem;
+		top: 0;
+		background-color: #FFFFFF;
+		color: #000000;
+		width: 100%;
+		height: 100vh;
+		z-index: 49;
+		transform: translateX(100%);
+		transition: all 0.5s ease-in;
+	}
+	.nav-active{	
+		transform: translateX(0%);
+	}
+	.page-title h1{
+		font-size: 2rem;
+	}
+	.page-title{
+		padding-top: 0.5rem;
+	}
+}
+

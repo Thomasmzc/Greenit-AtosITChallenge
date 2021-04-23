@@ -1,0 +1,363 @@
+@font-face {
+  font-family: basier;
+  src: url(../assets/fonts/basiercircle-regular.otf);
+}
+@font-face {
+  font-family: basier-bold;
+  src: url(../assets/fonts/BasierCircle-Bold.ttf);
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style-type: none;
+}
+
+/** COLORS **/
+/* 
+Green : #00B34B; 
+Hard Grey: #1E1F1A ;
+*/
+
+body{
+	height: 100vh;
+	overflow: hidden;
+}
+header{
+	display: flex;
+	position: fixed;
+	justify-content: space-between;
+	width: calc(100% - 10rem);
+	top:0;
+	left:0;
+	padding: 1rem 5rem;
+	padding-top: 2rem;
+	background: transparent;
+	z-index: 10;
+}
+.return-container{
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	border: 1px #A7A7A7 solid;
+	width: 3.5rem;
+	height: 3.5rem;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: all .3s ease;
+	align-self: center;
+}
+.return-container:hover{
+	border: 1.5px #A7A7A7 solid;
+}
+.gotosignup{
+	display: flex;
+	height: 35px;
+	padding: 12px 24px;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-ordinal-group: 1;
+	-webkit-order: 0;
+	-ms-flex-order: 0;
+	order: 0;
+	border: 1px transparent;
+	border-radius: 4px;
+	background-color: transparent;
+	-webkit-transition: border-color .4s ease,box-shadow .4s ease,-webkit-transform .4s ease;
+	transition: border-color .4s ease,box-shadow .4s ease,-webkit-transform .4s ease;
+	transition: border-color .4s ease,transform .4s ease,box-shadow .4s ease;
+	transition: border-color .4s ease,transform .4s ease,box-shadow .4s ease,-webkit-transform .4s ease;
+	color: #fff;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 500;
+	text-align: center;
+	border: 1.5px #A6A6A6 solid;
+	text-decoration: none;
+	cursor: pointer;
+}
+.gotosignup:hover{
+	box-shadow: 0 6px 12px -2px rgba(99,172,234,.6);
+	-webkit-transform: translate(0,-3px);
+	-ms-transform: translate(0,-3px);
+	transform: translate(0,-3px);
+}
+section{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 100vh;
+	z-index: 1;
+}
+
+.left_container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	min-height: 100vh;
+	width: 65%;
+	font-family: basier;
+}
+.marger-container{
+	display: block;
+	position: relative;
+	width: 40rem;
+	margin: auto;
+}
+.marger-container2{
+	display: none;
+	position: relative;
+	width: 40rem;
+	margin: auto;
+}
+h1{
+	display: block;
+	position: relative;
+	font-size: 3rem;
+	font-weight: 800;
+	color: #000000;
+	margin-bottom: 2rem;
+	font-family: basier-bold;
+}
+.explain{
+	display: block;
+	position: relative;
+	font-size: 1.2rem;
+	color: #A6A6A6;
+	width: 75%;
+	margin-bottom: 4rem;
+}
+.left_container input{
+	display: block;
+	position: relative;
+	font-size: 1.1rem;
+	padding: 0.6rem 1rem;
+	border-radius: 5px;
+	width: 70%;
+	border: 1px #FFFFFF solid;
+	background: rgba(230,230,230,0.6);
+	margin-top: 2.5rem;
+}
+.left_container input:focus{
+	background: rgba(240,240,240,0.6);
+}
+.forgotlink{
+	display: block;
+	position: relative;
+	font-size: 0.8rem;
+	margin-top: 0.4rem;
+	color: #00B34B;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.return{
+	display: block;
+	position: relative;
+	font-size: 0.8rem;
+	margin-top: 2rem;
+	color: #A6A6A6;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.gotolog{
+	display: flex;
+	height: 48px;
+	padding: 12px 24px;
+	width: 50%;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-ordinal-group: 1;
+	-webkit-order: 0;
+	-ms-flex-order: 0;
+	order: 0;
+	border: 1px transparent;
+	border-radius: 4px;
+	background-color: transparent;
+	background-image: -webkit-gradient(linear,left top,right top,from(#69AFEA),to(#63ACEA));
+	background-image: linear-gradient(90deg,#69AFEA,#63ACEA);
+	-webkit-transition: border-color .4s ease,box-shadow .4s ease,-webkit-transform .4s ease;
+	transition: border-color .4s ease,box-shadow .4s ease,-webkit-transform .4s ease;
+	transition: border-color .4s ease,transform .4s ease,box-shadow .4s ease;
+	transition: border-color .4s ease,transform .4s ease,box-shadow .4s ease,-webkit-transform .4s ease;
+	color: #fff;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 500;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+	cursor: pointer;
+}
+.gotolog:hover{
+	box-shadow: 0 6px 12px -2px rgba(99,172,234,.6);
+	-webkit-transform: translate(0,-3px);
+	-ms-transform: translate(0,-3px);
+	transform: translate(0,-3px);
+}
+.gotosend{
+	display: flex;
+	height: 48px;
+	padding: 12px 24px;
+	width: 50%;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-ordinal-group: 1;
+	-webkit-order: 0;
+	-ms-flex-order: 0;
+	order: 0;
+	border: 1px transparent;
+	border-radius: 4px;
+	background-color: transparent;
+	background-image: -webkit-gradient(linear,left top,right top,from(#69AFEA),to(#63ACEA));
+	background-image: linear-gradient(90deg,#69AFEA,#63ACEA);
+	-webkit-transition: border-color .4s ease,box-shadow .4s ease,-webkit-transform .4s ease;
+	transition: border-color .4s ease,box-shadow .4s ease,-webkit-transform .4s ease;
+	transition: border-color .4s ease,transform .4s ease,box-shadow .4s ease;
+	transition: border-color .4s ease,transform .4s ease,box-shadow .4s ease,-webkit-transform .4s ease;
+	color: #fff;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 500;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-top: 2rem;
+	margin-bottom: 4rem;
+	cursor: pointer;
+}
+.gotosend:hover{
+	box-shadow: 0 6px 12px -2px rgba(99,172,234,.6);
+	-webkit-transform: translate(0,-3px);
+	-ms-transform: translate(0,-3px);
+	transform: translate(0,-3px);
+}
+.success_message{
+	display: block;
+	position: relative;
+	margin-top: 1rem;
+	text-decoration: none;
+	color: #00B34B;
+}
+.right_container{
+	display: block;
+	position: relative;
+	width: 35%;
+	height: 100vh;
+	background: url('../assets/img/landscape.png') no-repeat center;
+	background-size: cover;
+}
+.text-error, .text-error2{
+	display: block;
+	position: relative;
+	text-decoration: none;
+	color: red;
+	font-size: 0.9rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+@media screen and (max-width: 1000px) {
+	header{
+		display: flex;
+		position: relative;
+		justify-content: space-between;
+		width: calc(100% - 4rem);
+		padding: 1rem 2rem;
+		padding-top: 2rem;
+		background: transparent;
+		z-index: 10;
+	}
+	.return-container{
+		display: flex;
+		position: relative;
+		justify-content: center;
+		align-items: center;
+		border: 1px #A7A7A7 solid;
+		width: 3.5rem;
+		height: 3.5rem;
+		border-radius: 20px;
+		cursor: pointer;
+		transition: all .3s ease;
+		align-self: center;
+	}
+	.return-container:hover{
+		border: 1.5px #A7A7A7 solid;
+	}
+	.left_container{
+		display: block;
+		position: relative;
+		padding: 1rem 2rem;
+		width: calc(100% - 4rem);
+	}
+	.marger-container{
+		display: block;
+		position: relative;
+		width: 100%;
+		margin: auto;
+	}
+	.marger-container2{
+		display: none;
+		position: relative;
+		width: 100%;
+		margin: auto;
+	}
+	h1{
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+	}
+	.explain{
+		font-size: 1rem;
+		margin-bottom: 2rem;
+	}
+	.left_container input{
+		display: block;
+		position: relative;
+		font-size: 1.1rem;
+		padding: 0.6rem 1rem;
+		border-radius: 5px;
+		width: calc(90% - 2rem);
+		margin: auto;
+		border: 1px #FFFFFF solid;
+		background: rgba(230,230,230,0.6);
+		margin-top: 2rem;
+	}
+	.forgotlink{
+		margin-top: 2rem;
+	}
+	.gotolog{
+		margin-top: 1rem;
+		margin-bottom: 3rem;
+	}
+	.right_container{
+		display: none;
+	}
+	.gotosignup{
+		color: #A6A6A6;
+	}
+	.text-error, .text-error2{
+		margin: auto;
+		text-align: center;
+	}
+}

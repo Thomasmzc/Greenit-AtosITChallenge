@@ -1,0 +1,120 @@
+@font-face {
+  font-family: basier;
+  src: url(../assets/fonts/basiercircle-regular.otf);
+}
+@font-face {
+  font-family: basier-bold;
+  src: url(../assets/fonts/BasierCircle-Bold.ttf);
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style-type: none;
+}
+
+/** COLORS **/
+/* 
+Green : #00B34B; 
+Hard Grey: #1E1F1A ;
+little grey: #A6A6A6;
+blue: #69AFEA;
+*/
+
+
+.corpus{
+	display: block;
+	position: relative;
+	width: 90%;
+	margin: auto;
+}
+.return-container{
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	border: 1px #A7A7A7 solid;
+	width: 3.5rem;
+	height: 3.5rem;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: all .3s ease;
+	align-self: center;
+}
+.return-container:hover{
+	border: 1.5px #A7A7A7 solid;
+}
+h2{
+	display: block;
+	position: relative;
+	padding-left: 2rem;
+	margin-top: 2rem;
+	font-family: basier-bold;
+}
+.flexer-cards{
+	display: flex;
+	padding: 6rem;
+	justify-content: space-between;
+	align-items: center;
+}
+.card{
+	display: block;
+	position: relative;
+	width: 18rem;
+	height: 23rem;
+	border-radius: 8px;
+	box-shadow: 0 6px 12px 0 rgba(48,54,77,.12);
+	font-family: helvetica;
+	padding: 1rem;
+}
+.card1{
+	background-image: -webkit-gradient(linear,left top,right top,from(#4066B4),to(#835F95));
+	background-image: linear-gradient(290deg,#4066B4,#835F95);
+	
+}
+.card2{
+	background-image: -webkit-gradient(linear,left top,right top,from(#1E3C61),to(#2861B2));
+	background-image: linear-gradient(290deg,#1E3C61,#2861B2);
+}
+.card3{
+	background-image: -webkit-gradient(linear,left top,right top,from(#406550),to(#11A54F));
+	background-image: linear-gradient(290deg,#406550,#11A54F);
+}
+.title-card{
+	display: block;
+	position: relative;
+	font-size: 1.9rem;
+	color: #FFFFFF;
+	font-weight: 800;
+}
+.price{
+	font-size: 1.1rem;
+	color: #FFFFFF;
+	font-weight: 400;
+	margin-top: 0.5rem;
+}
+.temporaryblocked{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	border-radius: 8px;
+	padding: 1rem 1rem;
+	width: 18rem;
+	height: 23rem;
+	top: 0;
+	left:0;
+	background-color: rgba(185,185,185,.7);
+	color: #FFFFFF;
+}
+@media screen and (max-width: 1000px){
+	body{
+		overflow-x: hidden;
+	}
+	.corpus{
+		display: block;
+		width: 98%;
+		overflow-x: hidden;
+	}
+}

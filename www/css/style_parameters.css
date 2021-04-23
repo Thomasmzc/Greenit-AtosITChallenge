@@ -1,0 +1,200 @@
+@font-face {
+  font-family: basier;
+  src: url(../assets/fonts/basiercircle-regular.otf);
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style-type: none;
+}
+
+/** COLORS **/
+/* 
+Green : #00B34B; 
+Hard Grey: #1E1F1A ;
+*/
+body{
+	min-height: 100vh;
+	overflow: hidden;
+	font-family: basier;
+	background-color: #F4F4F4;
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	height: 3rem;
+	padding: 0.5rem 1rem;
+	z-index: 2;
+}
+.return-container{
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	border: 1px #A7A7A7 solid;
+	width: 3.5rem;
+	height: 3.5rem;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: all .3s ease;
+	align-self: center;
+}
+.return-container:hover{
+	border: 1.5px #A7A7A7 solid;
+}
+.logo{
+	display: block;
+	position: relative;
+	height: 2rem;
+	align-self: center;
+	cursor: pointer;
+}
+/* CORPS */
+section{
+	display: block;
+	position: relative;
+	padding: 2rem 5rem;
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 3rem;
+}
+.blcacc{
+	display: block;
+	padding: 0.6rem 1rem;
+	border-radius: 4px;
+	background-color: #FFFFFF;
+}
+.blcdeco{
+	display: flex;
+	position: relative;
+	height: 24px;
+	padding: 12px 24px;
+	justify-content: center;
+	align-items: center;
+	order: 0;
+	border: 1px transparent;
+	border-radius: 4px;
+	background-color: transparent;
+	background-image: -webkit-gradient(linear,left top,right top,from(#4066B4),to(#835F95));
+	background-image: linear-gradient(290deg,#4066B4,#835F95);
+	-webkit-transition: border-color .4s ease,box-shadow .4s ease,-webkit-transform .4s ease;
+	transition: border-color .4s ease,box-shadow .4s ease,-webkit-transform .4s ease;
+	transition: border-color .4s ease,transform .4s ease,box-shadow .4s ease;
+	transition: border-color .4s ease,transform .4s ease,box-shadow .4s ease,-webkit-transform .4s ease;
+	color: #fff;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 500;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+}
+.blcdeco:hover{
+	box-shadow: 0 6px 12px -2px rgba(99,172,234,.6);
+	-webkit-transform: translate(0,-3px);
+	-ms-transform: translate(0,-3px);
+	transform: translate(0,-3px);
+}
+.centercontainer{
+	padding: 0rem 3rem;
+}
+.centercontainer input{
+	display: block;
+	position: relative;
+	font-size: 1.1rem;
+	padding: 0.6rem 1rem;
+	border-radius: 4px;
+	width: 20rem;
+	border: 1px #FFFFFF solid;
+	background: #FFFFFF;
+	margin-top: 1rem;
+	margin-left: 1rem;
+}
+.error{
+	display: block;
+	position: relative;
+	color: red;
+	text-decoration: none;
+	font-size: 0.9rem;
+	margin: 3rem;
+}
+.success{
+	display: block;
+	position: relative;
+	color: #00B34B;
+	font-size: 0.9rem;
+	margin: 3rem;
+	text-decoration: none;
+}
+#submitchange{
+	display: flex;
+	height: 36px;
+	padding: 12px 24px;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-ordinal-group: 1;
+	-webkit-order: 0;
+	-ms-flex-order: 0;
+	order: 0;
+	border: 1px transparent;
+	border-radius: 4px;
+	background-color: transparent;
+	background-image: -webkit-gradient(linear,left top,right top,from(#69AFEA),to(#63ACEA));
+	background-image: linear-gradient(90deg,#69AFEA,#63ACEA);
+	-webkit-transition: border-color .4s ease,box-shadow .4s ease,-webkit-transform .4s ease;
+	transition: border-color .4s ease,box-shadow .4s ease,-webkit-transform .4s ease;
+	transition: border-color .4s ease,transform .4s ease,box-shadow .4s ease;
+	transition: border-color .4s ease,transform .4s ease,box-shadow .4s ease,-webkit-transform .4s ease;
+	color: #fff;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 500;
+	text-align: center;
+	text-decoration: none;
+	margin-top: 2rem;
+	cursor: pointer;
+}
+#submitchange:hover{
+	box-shadow: 0 6px 12px -2px rgba(99,172,234,.6);
+	-webkit-transform: translate(0,-3px);
+	-ms-transform: translate(0,-3px);
+	transform: translate(0,-3px);
+}
+@media screen and (max-width: 1000px){
+	header{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		position: relative;
+		height: 3rem;
+		padding: 0.5rem 0.2rem;
+		z-index: 2;
+	}
+	section{
+		display: block;
+		position: relative;
+		padding: 2rem 0.5rem;
+	}
+	nav{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1.5rem 0.5rem;
+	}
+	.centercontainer{
+		padding: 0rem 0.5rem;
+	}
+}
