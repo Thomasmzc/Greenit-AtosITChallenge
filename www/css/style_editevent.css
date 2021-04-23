@@ -676,8 +676,37 @@ img:not(.ppicture) {
 	background-color: rgba(0,0,0,.7);
 }
 @media screen and (max-width: 1000px){
-	.corpus{
+	.corpus0{
 		display: block; 
+		position: relative;
+		width: calc(100% - 2rem);
+		margin: auto;
+		padding: 1rem;
+		padding-top: 4rem;
+		overflow-y: auto;
+	}
+	.flexer-type{
+		display: block;
+		margin-top: 4rem;
+	}
+	.flexer-type span{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 8px;
+		width: 90%;
+		margin: auto;
+		margin-top: 1.5rem;
+		box-shadow: 0 6px 12px 0 rgba(48,54,77,.12);
+		background-color: #FFFFFF;
+		color: #A6A6A6;
+		height: 7rem;
+		font-size: 1.2rem;
+		transition: all .4s ease;
+		cursor: pointer;
+	}
+	.corpus{
+		display: none; 
 		position: relative;
 		width: calc(100% - 2rem);
 		margin: auto;
@@ -758,9 +787,12 @@ img:not(.ppicture) {
 		width: 20%;
 		text-align: center;
 	}
+	#description{
+		width: calc(100% - 2rem);
+	}
 	.flexer-inputs .inputblc:not(.hided){
 		display: block;
-		width: 99%;
+		width: 96%;
 	}
 	.inputblc input{
 		display: block;
@@ -768,7 +800,23 @@ img:not(.ppicture) {
 	}
 	.hided{
 		display: none;
-		width: 100%;
+		width: 96%;
+	}
+	.return-container, .return-container2 {
+		display: flex;
+		position: absolute;
+		top: 0;
+		left:1rem;
+		justify-content: center;
+		align-items: center;
+		border: 1px #A7A7A7 solid;
+		width: 3.5rem;
+		height: 3.5rem;
+		border-radius: 15px;
+		cursor: pointer;
+		transition: all .3s ease;
+		align-self: center;
+		z-index: 2;
 	}
 	.corpus2{
 		display: none; 
@@ -776,6 +824,7 @@ img:not(.ppicture) {
 		width: calc(100% - 2rem);
 		margin: auto;
 		padding: 1rem;
+		padding-top: 4rem;
 	}
 	.corpus2 h2{
 		display: block;

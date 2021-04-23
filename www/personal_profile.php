@@ -96,7 +96,7 @@ if(isset($_SESSION['id']) && $_SESSION['type'] == "perso"){
                             <h2>Engagements</h2>
                             <div class='flexer_interest'></div> 
                             <div class='selector-interests_container'>
-                                <p class='explainegage'>Select the causes that speak the most to you.</p>
+                                <p class='explainegage'>Select the topics that interest you the most</p>
                                 <span id='closerengage'>close</span>
                                 <div class='flexerinteresteditor'>
                                 </div>
@@ -104,7 +104,6 @@ if(isset($_SESSION['id']) && $_SESSION['type'] == "perso"){
                         </div>
                         <div class='interests-container' />
                             <h2>Interests</h2>
-                            <p class='explainegage'>Select the topics that interest you the most</p>
                             <input type='text' id='searcherinterests' placeholder='Interest (eg: Games)' />
                             <div class='findings-container'></div>
                             <div class='selectedinterests'>

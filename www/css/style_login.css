@@ -452,6 +452,14 @@ section{
 		box-shadow: 0 6px 12px 0 rgba(48,54,77,.12);
 		padding: 2rem 1rem;
 	}
+	.left_side2{
+		display: none;
+		position: relative;
+		width: 90%;
+		font-family: basier;
+		box-shadow: 0 6px 12px 0 rgba(48,54,77,.12);
+		padding: 2rem 1rem;
+	}
 	.left_side input, .left_side2 input{
 		display: block;
 		position: relative;

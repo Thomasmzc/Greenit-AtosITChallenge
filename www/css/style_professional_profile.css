@@ -452,6 +452,7 @@ blue: #69AFEA;
 .blochelp{
 	display: flex;
 	flex-wrap: wrap;
+	position: relative;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
@@ -466,7 +467,23 @@ blue: #69AFEA;
 	border-radius: 4px;
 	cursor: pointer;
 }
-.blochelp p{
+.temporaryblocked{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	border-radius: 8px;
+	padding: 1rem 1rem;
+	width: calc(100% - 2rem);
+	height: 7rem;
+	font-size: 1rem;
+	top: 0;
+	left:0;
+	background-color: rgba(150,150,150,.8);
+	color: #FFFFFF;
+	z-index: 10;
+}
+.blochelp p:not(.temporaryblocked){
 	display: block;
 	position: relative;
 	margin: auto;
@@ -576,7 +593,7 @@ blue: #69AFEA;
 		font-family: basier-bold;
 		font-size: 1.3rem;
 		color: #FFFFFF;
-		background-color: #00B34B;
+		background-color: #A6A6A6;
 		box-shadow: 0 6px 12px 0 rgba(48,54,77,.12);
 		border-radius: 4px;
 		cursor: pointer;

@@ -874,6 +874,10 @@ h2:not(.lttile){
 		border: none;
 		background: #FFFFFF;
 	}
+	#description{
+		display: block;
+		width: calc(100% - 2rem);
+	}
 	.explains{
 		display: block;
 		position: relative;

@@ -43,147 +43,152 @@ $("#submit").click(function(){
 
 
 
-  if($title.length > 1 && $location.length > 1 && $date_start.length == 10 && $hour_start.length == 5 && $topic.length > 1){
+  if($title.length > 1 && $location.length > 1 && $date_start.length == 10 && $hour_start.length > 3 && $topic.length > 1){
     if(d1 <= d2){
       if($date_end.length == 10 && d3 <= d2){
         showError("Your ending date should be at least 1 day after your starting date.");
       }
       else{
-        var h1 = $hour_start+":00";
-        if($hour_end.length == 5){
-          var h2 = $hour_end+":00";
-        }
-        if($hour_end.length == 5 && h1 >= h2){
-          showError("Your ending time should be after your starting time.");
+        if($hour_start.length != 5){
+          showError("Check your time start format, it should be 00:00.");
         }
         else{
-          if($description.length > 49){
-            $(".corpus").hide();
-            $(".corpus2").show();
-            $("#submit2").click(function(){
-              $('.error').empty();
-              $linkwebsite = $("#linkwebsite").val();
-              $linkregis = $("#linkregis").val();
+          var h1 = $hour_start+":00";
+          if($hour_end.length == 5){
+            var h2 = $hour_end+":00";
+          }
+          if($hour_end.length == 5 && h1 >= h2){
+            showError("Your ending time should be after your starting time.");
+          }
+          else{
+            if($description.length > 49){
+              $(".corpus").hide();
+              $(".corpus2").show();
+              $("#submit2").click(function(){
+                $('.error').empty();
+                $linkwebsite = $("#linkwebsite").val();
+                $linkregis = $("#linkregis").val();
 
-              $openness = 0;
-              $private = $(".private").data('selec');
-              if($private == "0"){
-                $public = $(".public").data('selec');
-                if($public == "0"){
-                  showError("You have to choose between private and public event");
+                $openness = 0;
+                $private = $(".private").data('selec');
+                if($private == "0"){
+                  $public = $(".public").data('selec');
+                  if($public == "0"){
+                    showError("You have to choose between private and public event");
+                  }
+                  else{
+                    $openness = "public";
+                  }
                 }
                 else{
-                  $openness = "public";
+                   $openness = "private";
                 }
-              }
-              else{
-                 $openness = "private";
-              }
 
-              $payment = 0;
-              $paying = $(".paying").data('selec');
-              if($paying == "0"){
-                $free = $(".free").data('selec');
-                if($free == "0"){
-                  showError("You have to choose between paying and free event");
+                $payment = 0;
+                $paying = $(".paying").data('selec');
+                if($paying == "0"){
+                  $free = $(".free").data('selec');
+                  if($free == "0"){
+                    showError("You have to choose between paying and free event");
+                  }
+                  else{
+                    $payment = "free";
+                  }
                 }
                 else{
-                  $payment = "free";
+                  $payment = "paying";
                 }
-              }
-              else{
-                $payment = "paying";
-              }
 
-              $timing = 0;
-              $onetime = $(".onetime").data('selec');
-              if($onetime == "0"){
-                $regular = $(".regular").data('selec');
-                if($regular == "0"){
-                  showError("You have to choose between onetime and regular event");
+                $timing = 0;
+                $onetime = $(".onetime").data('selec');
+                if($onetime == "0"){
+                  $regular = $(".regular").data('selec');
+                  if($regular == "0"){
+                    showError("You have to choose between onetime and regular event");
+                  }
+                  else{
+                    $timing = "regular";
+                  }
                 }
                 else{
-                  $timing = "regular";
+                  $timing = "onetime";
                 }
-              }
-              else{
-                $timing = "onetime";
-              }
 
-              $physical = 0;
-              $effort = $('.eff1').data('selec');
-              if($effort == "0"){
-                $effort = $('.eff2').data('selec');
+                $physical = 0;
+                $effort = $('.eff1').data('selec');
                 if($effort == "0"){
-                  $effort = $('.eff3').data('selec');
+                  $effort = $('.eff2').data('selec');
                   if($effort == "0"){
-                    $effort = $('.eff4').data('selec');
+                    $effort = $('.eff3').data('selec');
                     if($effort == "0"){
-                      $effort = $('.eff5').data('selec');
+                      $effort = $('.eff4').data('selec');
                       if($effort == "0"){
-                        showError("You have to select a level of physical effort");
+                        $effort = $('.eff5').data('selec');
+                        if($effort == "0"){
+                          showError("You have to select a level of physical effort");
+                        }
+                        else{
+                          $physical = 5;
+                        }
                       }
                       else{
-                        $physical = 5;
+                        $physical = 4;
                       }
                     }
                     else{
-                      $physical = 4;
+                      $physical = 3;
                     }
                   }
                   else{
-                    $physical = 3;
+                    $physical = 2;
                   }
                 }
                 else{
-                  $physical = 2;
+                  $physical = 1;
                 }
-              }
-              else{
-                $physical = 1;
-              }
 
-              setTimeout(function(){
-                if($physical > 0 && $timing != 0 && $payment != 0 && $openness != 0){
-                  if($photo.length < 1){
-                    $photo = "basic.png";
-                  }
-                  $.ajax({
-                    url: 'includes/traitement_POST_event.php',
-                    type: 'post',
-                    dataType: "json",
-                    data:{
-                      title: $title,
-                      location: $location,
-                      date_start: $date_start,
-                      date_end: $date_end,
-                      hour_start: $hour_start,
-                      hour_end: $hour_end,
-                      description: $description,
-                      topic: $topic,
-                      photo: $photo,
-                      website: $linkwebsite,
-                      registration: $linkregis,
-                      physical: $physical,
-                      timing: $timing,
-                      payment: $payment,
-                      openness: $openness
-                    },
-                    success: function(json){
-                     $.each(json, function(index, value){
-                        if(index == "200"){
-                          window.location.href='ourevents.php';
-                        }
-                     });
+                setTimeout(function(){
+                  if($physical > 0 && $timing != 0 && $payment != 0 && $openness != 0){
+                    if($photo.length < 1){
+                      $photo = "basic.png";
                     }
-                 });
-                }
-              }, 500);
+                    $.ajax({
+                      url: 'includes/traitement_POST_event.php',
+                      type: 'post',
+                      dataType: "json",
+                      data:{
+                        title: $title,
+                        location: $location,
+                        date_start: $date_start,
+                        date_end: $date_end,
+                        hour_start: $hour_start,
+                        hour_end: $hour_end,
+                        description: $description,
+                        topic: $topic,
+                        photo: $photo,
+                        website: $linkwebsite,
+                        registration: $linkregis,
+                        physical: $physical,
+                        timing: $timing,
+                        payment: $payment,
+                        openness: $openness
+                      },
+                      success: function(json){
+                       $.each(json, function(index, value){
+                          if(index == "200"){
+                            window.location.href='ourevents.php';
+                          }
+                       });
+                      }
+                   });
+                  }
+                }, 500);
 
-            });
-          }
-          else{
-            showError("Your description should be longer (at least 50 characters).");
+              });
+            }
+            else{
+              showError("Your description should be longer (at least 50 characters).");
+            }
           }
         }
       }

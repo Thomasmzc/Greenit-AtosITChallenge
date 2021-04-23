@@ -622,8 +622,7 @@ ins{
 		display: block;
 		position: absolute;
 		top: -4rem;
-		right: 3rem;
-		color: #69AFEA;
+		right: 0rem;
 		cursor: pointer;
 	}
 	.flexer-profile_infos{

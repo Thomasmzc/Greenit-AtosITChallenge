@@ -98,24 +98,28 @@ if(isset($_SESSION['id']) && $_SESSION['type'] == "pro"){
                             <h2>How can we help you <ins class='myfname'>Prenom</ins>?</h2>
                             <div class='flex-help-container'>
                                 <div class='pparameter blochelp'>
+                                    <p class='temporaryblocked'>Coming soon !</p>
                                     <div class='center-blochelp'>
                                         <p>Page parameter</p>
                                         <img src='assets/img/computer.png' class='iconhelp'/>
                                     </div>
                                 </div>
                                 <div class='subscription blochelp'>
+                                    <p class='temporaryblocked'>Coming soon !</p>
                                     <div class='center-blochelp'>
                                         <p>Subscription</p>
                                         <img src='assets/img/networking.png' class='iconhelp'/>
                                     </div>
                                 </div>
                                 <div class='push blochelp'>
+                                    <p class='temporaryblocked'>Coming soon !</p>
                                     <div class='center-blochelp'>
                                         <p>Push</p>
                                         <img src='assets/img/promotion.png' class='iconhelp'/>
                                     </div>
                                 </div>
                                 <div class='payment blochelp'>
+                                    <p class='temporaryblocked'>Coming soon !</p>
                                     <div class='center-blochelp'>
                                         <p>Payment</p>
                                         <img src='assets/img/credit-card.png' class='iconhelp'/>

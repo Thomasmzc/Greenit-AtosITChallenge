@@ -761,8 +761,14 @@ section{
 		display: block;
 		position: relative;
 		margin: auto;
-		width: 96%;
+		width: 100%;
 		padding-right: 0rem;
+	}
+	.flexer-input-container{
+		display: flex;
+		position: relative;
+		align-items: center;
+		flex-wrap: wrap;
 	}
 	.onefav{
 		display: block;
@@ -790,10 +796,11 @@ section{
 		display: flex;
 		position: relative;
 		align-items: center;
-		width: 75%;
+		width: 98%;
 		background: #FFFFFF;
 		padding: 0.3rem 1rem;
 		border-radius: 5px;
+		margin-bottom: 1rem;
 	}
 	.flexer-input input{
 		display: block;
@@ -900,8 +907,7 @@ section{
 		display: block;
 		position: relative;
 		font-size: 0.9rem;
-		margin-top: 0.5rem;
-		color: #69AFEA;
+		color: #A6A6A6;
 	}
 	.bclocation{
 		display: flex;
@@ -920,6 +926,22 @@ section{
 	}
 }
 @media screen and (min-width:1000px) and (max-width: 1250px){
+	.flexer-input-container{
+		display: flex;
+		position: relative;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	.flexer-input{
+		display: flex;
+		position: relative;
+		align-items: center;
+		width: 98%;
+		background: #FFFFFF;
+		padding: 0.3rem 1rem;
+		border-radius: 5px;
+		margin-bottom: 1rem;
+	}
 	.bcresult{
 		display: block;
 		position: relative;

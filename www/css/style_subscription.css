@@ -117,4 +117,34 @@ h2{
 		width: 98%;
 		overflow-x: hidden;
 	}
+	.flexer-cards{
+		display: block;
+		padding: 1rem;
+	}
+	.card{
+		display: block;
+		position: relative;
+		width: 90%;
+		height: 10rem;
+		border-radius: 8px;
+		box-shadow: 0 6px 12px 0 rgba(48,54,77,.12);
+		font-family: helvetica;
+		padding: 1rem;
+		margin: auto;
+		margin-top: 2rem;
+	}
+	.temporaryblocked{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		border-radius: 8px;
+		padding: 1rem 1rem;
+		width: calc(100% - 2rem);
+		height: 10rem;
+		top: 0;
+		left:0;
+		background-color: rgba(185,185,185,.7);
+		color: #FFFFFF;
+	}
 }

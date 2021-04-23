@@ -106,7 +106,6 @@ blue: #69AFEA;
 	transition: border-color .4s ease,transform .4s ease,box-shadow .4s ease,-webkit-transform .4s ease;
 	cursor: pointer;
 	margin-left: 1rem;
-
 }
 .bcresult:hover{
 	-webkit-transform: translate(0px,-5px);
@@ -270,26 +269,10 @@ blue: #69AFEA;
 	.flexer-events{
 		display: block;
 		position: relative;
-		padding: 1rem;
+		padding: 1rem 0rem;
 		height: 35rem;
 		align-items: center;
 		width: 100%;
-		overflow-y: visible;
-		overflow-x: auto;
-	}
-	.add-event-container{
-		display: flex;
-		position: relative;
-		justify-content: center;
-		align-items: center;
-		width: 8.6rem;
-		height: 6.7rem;
-		box-shadow: 0 6px 12px 0 rgba(48,54,77,.12);
-		background-color: #FFFFFF;
-		padding: 1rem;
-		margin-right: 2rem;
-		border-radius: 8px;
-		cursor: pointer;
 	}
 	.flexer-scheduled{
 		display: flex;
@@ -300,6 +283,25 @@ blue: #69AFEA;
 		align-items: center;
 		overflow-y: visible;
 		overflow-x: auto;
+	}
+	.bcresult{
+		display: block;
+		position: relative;
+		padding: 1rem;
+		margin-top: 1rem;
+		box-shadow: 0 6px 12px 0 rgba(48,54,77,.12);
+		border-radius: 8px;
+		min-height: 10rem;
+		background-color: #FFFFFF;
+		min-width: 88%;
+		width: 88%;
+		-webkit-transition: border-color .4s ease,box-shadow .4s ease,-webkit-transform .4s ease;
+		transition: border-color .4s ease,box-shadow .4s ease,-webkit-transform .4s ease;
+		transition: border-color .4s ease,transform .4s ease,box-shadow .4s ease;
+		transition: border-color .4s ease,transform .4s ease,box-shadow .4s ease,-webkit-transform .4s ease;
+		cursor: pointer;
+		margin-right: 1rem;
+		margin-left: 0;
 	}
 	.flexer-past{
 		display: flex;
