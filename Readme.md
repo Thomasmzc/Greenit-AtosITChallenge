@@ -54,7 +54,7 @@ In the technical documentation folder, you can find our functional modules in de
 
 To deal with our data, we are using Phpmyadmin, to manage a MySQL database. You can see the tables and their links (using unique auto-incremented ID) on the graph below: 
 
-!(, "Our database tables")
+![Our database tables](./Technical_documentation/assets/img/BDD_Map_greenit.png)
 
 OVH automatically manages regular backups.
 
