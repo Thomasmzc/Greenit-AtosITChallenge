@@ -148,7 +148,7 @@ Lastly, as we will develop internationally and, in the short term, in France, we
 Accessibility
 -----------
 
-Our web app is responsive, meaning that it offers a good user experience on modern mobile screens, tablets and computer screens.
+Our web app is responsive, meaning that it offers a good user experience on browers' latest versions on modern smartphone, tablets and computer screens.
 
 
 
