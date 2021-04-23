@@ -50,6 +50,10 @@ As a bonus :  OVh is a French company, so we can check that they are in accordan
 
 In the technical documentation folder, you can find our functional modules in details (pages and their link).
 
+Here you can find a general overview of our website's organization: 
+
+![Our pages](./Technical_documentation/assets/img/Page_Diagram.png)
+
 **Database**
 
 To deal with our data, we are using Phpmyadmin, to manage a MySQL database. You can see the tables and their links (using unique auto-incremented ID) on the graph below: 
