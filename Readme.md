@@ -14,15 +14,27 @@ The website offers two connected spaces :
 
 If most of us know the task is huge, we are here to help make it more tangible. Each of our users, having access to a network tailored to their interests, can take part in the fast-approaching era of decarbonization. **By centralizing quality information**, being **convenient** and providing a **personalized service**, green'it wants to prove that deciding to take part can be easy.
 
-Uses cases
+
+
+
+TESTS
 -----------
+
+**Uses cases**
 
 In the technical documentation folder, you can find complete uses cases to fully understand our users journeys.
 
-Test cases
------------
+**Test cases**
 
 In the technical documentation folder, you can find tests cases that we used for the development stage.
+
+**Data for testing**
+
+We have prepared some fictionnal data that you will need to test this web app. You can find those in the technical documentation folder.
+
+
+*We hope you will like our web app. Enjoy with green'it.*
+
 
 Architecture
 -----------
@@ -141,3 +153,13 @@ Http server, Mysql & PHP.
 A running mail instance.
 
 As a web application, it's pretty quick to deploy : configuring the database with all the tables, putting the code on the server and then changing the php settings files (includes/connexion.php & includes/mail_account.php).
+
+Contact
+-----------
+
+
+- Hirsch Noémie: noemie.hirsch@orange.fr
+- Delmas Amandine: amandinedelmas94@gmail.com
+- Pechansky Ricardo: ricardopechansky@gmail.com
+- Hamour Aimed: aimed.hamour@gmail.com
+
