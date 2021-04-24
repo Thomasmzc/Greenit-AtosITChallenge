@@ -119,6 +119,9 @@ In fact, we can switch to more performing languages in terms of data volume trea
 - API RNA (provided by French government to access to database of French non-profit organizations’ RNA number)
 *We are sending https requests to check the RNA number and verify non-profit organizations’ identity when they are subscribing.*
 
+- MAPS GEOCODE (provided by Google to get coordinates from an adress)
+*We are sending https requests to get coordinates from the adress when users and organisations are subscribing.*
+
 **Taking into account non-functional requirements : Stateless, Availability, Scalability, Security**
 
 In terms of security, we are dealing with restricted access through session variables provided by php. Authentication is managed with email and a home-made unique encryption for the password. We are also using a SSL Certificate provided by OVH (LETSENCRYPT DV), with an automated redirection managed with a .htaccess file.
