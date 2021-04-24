@@ -23,15 +23,15 @@ TESTS
 
 **Uses cases**
 
-In the technical documentation folder, you can find complete uses cases to fully understand our users journeys.
+In the technical documentation folder (file: 1-Use cases.pdf), you can find complete uses cases to fully understand our users journeys.
 
 **Test cases**
 
-In the technical documentation folder, you can find tests cases that we used for the development stage.
+In the technical documentation folder (file: 2-Test cases.pdf), you can find tests cases that we used for the development stage.
 
 **Data for testing**
 
-We have prepared some fictionnal data that you will need to test this web app. You can find those in the technical documentation folder.
+We have prepared some fictionnal data that you can use to test this web app. You can find those in the technical documentation folder (file: 3-Data for testing.pdf).
 
 
 *We hope you will like our web app. Enjoy with green'it.*
@@ -120,7 +120,8 @@ In fact, we can switch to more performing languages in terms of data volume trea
 *We are sending https requests to check the RNA number and verify non-profit organizations’ identity when they are subscribing.*
 
 - MAPS GEOCODE (provided by Google to get coordinates from an adress)
-*We are sending https requests to get coordinates from the adress when users and organisations are subscribing.*
+*We are sending https requests to get latitude and longitude
+git push -u origin main from the adress when users and organisations are subscribing.*
 
 **Taking into account non-functional requirements : Stateless, Availability, Scalability, Security**
 
@@ -145,6 +146,8 @@ In terms of security, given that the respect of private life is at the core of o
 
 Lastly, as we will develop internationally and, in the short term, in France, we will need to make sure our RGPD conformity is in place. We have already started to work on this point, but we will need to improve it in the near future, taking into account each country's specificities.
 
+
+You can find more details about software functionnalities improvements in the technical documentation folder (file: 4-Backlog.pdf).
 
 
 
