@@ -45,7 +45,7 @@ $(document).ready(function(){
                 else if(value[6] == 3){
                   $('.level-infos').append("<img class='icon_choice' src='assets/img/tree.png'/>");
                 }
-                $('#sharelink').val("https://thebigview.fr/signup?link="+value[0]+value[7]);
+                $('#sharelink').val("https://greenit.co/signup?link="+value[0]+value[7]);
            		}
            });
         }
